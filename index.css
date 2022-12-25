@@ -1,0 +1,319 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.fifa {
+  top: calc(50% - 255px);
+  letter-spacing: 0.05em;
+  line-height: 87%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 474.96px;
+  -webkit-text-stroke: 1.7px #fff;
+}
+.fifa.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-left;
+}
+.div,
+.fifa,
+.lineText {
+  position: absolute;
+  left: calc(50% - 619.96px);
+  opacity: 0;
+}
+.div {
+  top: calc(50% - 97px);
+  font-size: 153.12px;
+  letter-spacing: 0.05em;
+  line-height: 87%;
+  text-transform: uppercase;
+  color: var(--border-color);
+  display: inline-block;
+  width: 548.96px;
+  -webkit-text-stroke: 1.6px #fff;
+}
+.div.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-bottom;
+}
+.lineText {
+  top: calc(50% + 73.24px);
+  background-color: var(--color-yellow-100);
+  width: 112.04px;
+  height: 8px;
+}
+.lineText.animate {
+  animation: 1s ease 1s 1 normal forwards slide-in-left;
+}
+.landing-page-item {
+  position: absolute;
+  top: calc(50% - 423px);
+  left: calc(50% - 226px);
+  width: 898px;
+  height: 752px;
+  object-fit: cover;
+  opacity: 0;
+  transition: 1s;
+}
+.landing-page-item.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+}
+.landing-page-item:hover {
+  transition: 1s;
+}
+.brand,
+.sports {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--c);
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.05em;
+  line-height: 110%;
+  font-family: var(--font-space-mono);
+  color: var(--border-color);
+  text-align: left;
+  display: inline-block;
+  opacity: 0;
+}
+.sports {
+  transition: 0.5s;
+}
+.sports.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+.sports:hover {
+  color: var(--color-gray-300);
+}
+.brand {
+  transition: 1s;
+}
+.brand.animate {
+  animation: 2.5s ease 0s 1 normal forwards slide-in-top;
+}
+.brand:hover {
+  color: var(--color-gray-300);
+}
+.g2402-icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.adidas,
+.product,
+.stream {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--c);
+  position: relative;
+  opacity: 0;
+  transition: 1s;
+}
+.adidas {
+  width: 64.7px;
+  height: 48.38px;
+  flex-shrink: 0;
+}
+.adidas.animate {
+  animation: 3s ease 0s 1 normal forwards slide-in-top;
+}
+.adidas:hover {
+  transition: 1s;
+  scale: 1.15;
+}
+.product,
+.stream {
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.05em;
+  line-height: 110%;
+  font-family: var(--font-space-mono);
+  color: var(--border-color);
+  text-align: left;
+  display: inline-block;
+}
+.product.animate {
+  animation: 3.5s ease 0s 1 normal forwards slide-in-top;
+}
+.product:hover {
+  color: var(--color-gray-300);
+}
+.stream.animate {
+  animation: 4s ease 0s 1 normal forwards slide-in-top;
+}
+.stream:hover {
+  color: var(--color-gray-300);
+}
+.sports-parent {
+  position: absolute;
+  top: calc(50% - 24.19px);
+  left: calc(50% - 435.35px);
+  width: 870.7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-page-inner,
+.rectangle-div {
+  position: absolute;
+  top: calc(50% - 552px);
+  left: calc(50% - 435px);
+  width: 870.7px;
+  height: 48.38px;
+}
+.rectangle-div {
+  top: calc(50% + 262.3px);
+  left: calc(50% + 301.4px);
+  background-color: var(--color-gray-1200);
+  width: 1px;
+  height: 1px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+}
+.card {
+  position: absolute;
+  top: calc(50% + 204px);
+  left: calc(50% - 630px);
+  border-radius: var(--br-xl);
+  width: 371px;
+  height: 286px;
+  object-fit: cover;
+  opacity: 1;
+}
+.card.animate {
+  animation: 1s ease 0s 1 normal forwards scale-up;
+}
+.description {
+  position: absolute;
+  top: calc(50% + 169px);
+  left: calc(50% + 325px);
+  font-size: 23.01px;
+  letter-spacing: 0.05em;
+  line-height: 149.5%;
+  font-family: var(--font-space-mono);
+  color: var(--color-gray-1200);
+  display: inline-block;
+  width: 346.12px;
+  opacity: 0;
+}
+.description.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-right;
+}
+.group-icon {
+  position: absolute;
+  top: calc(50% + 546.17px);
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 53.83px;
+}
+.greenbutton,
+.readMore {
+  position: absolute;
+  width: 248px;
+  height: 80px;
+}
+.readMore {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-3xl);
+  letter-spacing: 0.05em;
+  line-height: 87%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-1100);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.greenbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-yellow-100);
+  top: calc(50% + 404px);
+  left: calc(50% + 325px);
+  border-radius: var(--br-2xs) var(--br-2xs) 500px var(--br-2xs);
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+.greenbutton.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-bottom;
+}
+.greenbutton:hover {
+  background-color: rgba(183, 255, 28, 0.64);
+  box-shadow: 0 4px 30px 15px rgba(0, 0, 0, 0.5);
+  transition: 1;
+  scale: 1.05;
+}
+.landing-page {
+  position: relative;
+  background-color: var(--color-gray-1100);
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 159.25px;
+  color: transparent;
+  font-family: var(--font-monument-extended);
+}

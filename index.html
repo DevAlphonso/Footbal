@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./overall.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space Mono:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Telex:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <style>
+      @font-face {
+        font-family: "Monument Extended";
+        src: url("images/MonumentExtended-Ultrabold.ttf");
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="fifa" data-animate-on-scroll>fifa</div>
+      <div class="div" data-animate-on-scroll>2022</div>
+      <div class="lineText" data-animate-on-scroll></div>
+      <img
+        class="landing-page-item"
+        alt=""
+        src="images/frame-1000000810@2x.png"
+        data-animate-on-scroll
+      />
+      <div class="landing-page-inner">
+        <div class="sports-parent">
+          <button class="sports" data-animate-on-scroll>Sports</button
+          ><button class="brand" data-animate-on-scroll>Brand</button
+          ><button class="adidas" data-animate-on-scroll>
+            <img class="g2402-icon" alt="" src="images/g2402.svg" /></button
+          ><button class="product" data-animate-on-scroll>Product</button
+          ><button class="stream" data-animate-on-scroll>Stream</button>
+        </div>
+      </div>
+      <div class="rectangle-div"></div>
+      <img
+        class="card"
+        alt=""
+        src="images/frame-1000000811@2x.png"
+        data-animate-on-scroll
+      />
+      <div class="description" data-animate-on-scroll>
+        Adidas revels the first FIFA World Cup official ball featuring connected
+        ball technology
+      </div>
+      <img class="group-icon" alt="" src="images/group-25.svg" /><button
+        class="greenbutton"
+        data-animate-on-scroll
+      >
+        <div class="readMore">Read More</div>
+      </button>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
